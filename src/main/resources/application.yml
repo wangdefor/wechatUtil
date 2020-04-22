@@ -1,0 +1,11 @@
+server:
+  port: 8545
+spring:
+  application:
+    name: SpringBootTest
+  redis:
+    host: 10.0.2.4
+    port: 6379
+    password: cimen
+
+
