@@ -1,6 +1,5 @@
 package org.example.util;
 
-import io.swagger.annotations.Api;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -26,5 +25,9 @@ public class ResponseBody<T> {
 
     public static <T> ResponseBody<T> ok(T t){
         return new ResponseBody<>(ResponsStatus.SUCCESS.getCode(),ResponsStatus.SUCCESS.getMessage(),t);
+    }
+
+    public static <T> ResponseBody<T> fail(){
+        return new ResponseBody<>(ResponsStatus.FAIL.getCode(),ResponsStatus.FAIL.getMessage(),null);
     }
 }

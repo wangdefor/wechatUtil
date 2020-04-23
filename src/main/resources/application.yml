@@ -3,9 +3,16 @@ server:
 spring:
   application:
     name: SpringBootTest
+
   redis:
     host: 10.0.2.4
     port: 6379
     password: cimen
+
+  datasource:
+    username: root
+    password: 12345
+    url: jdbc:mysql://localhost:3306/wechat?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
 
